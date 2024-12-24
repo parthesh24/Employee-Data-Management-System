@@ -1,0 +1,98 @@
+/* Outer container */
+.container {
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 20px;
+  }
+  
+  /* Card container */
+  .card {
+    background-color: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  
+  /* No employees message */
+  .no-employees {
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .table tr.even {
+    background-color: #fafafa;
+  }
+  
+  .table tr.odd {
+    background-color: #ffffff;
+  }
+  
+  .table tr:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .table td {
+    color: #333333;
+    font-size: 14px;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 600px) {
+    .table th,
+    .table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  }
+  
+.action-link {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+  
+.action-link:hover {
+    color: #0056b3;
+}
+  

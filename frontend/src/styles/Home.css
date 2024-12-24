@@ -1,0 +1,144 @@
+/* styles/Home.css */
+
+/* Modern gradient background with animation */
+.gradient-bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    /* animation: gradientBG 15s ease infinite; */
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Glass morphism card effect */
+  .card-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    /* transition: all 0.4s ease; */
+    padding: 2.5rem !important;
+    border-radius: 20px !important;
+  }
+  
+  .card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+  }
+  
+  /* Enhanced button container */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem !important;
+    margin-top: 2rem;
+  }
+  
+  /* Enhanced button styles */
+  .nav-button {
+    position: relative;
+    padding: 1rem 2rem !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    /* transition: all 0.3s ease; */
+    border: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.5rem;
+  }
+  
+  .nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: translateX(-100%);
+    /* transition: 0.6s; */
+  }
+  
+  .nav-button:hover::before {
+    transform: translateX(100%);
+  }
+  
+  /* Button variants */
+  .login-button {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(135deg, #4338ca, #2563eb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  }
+  
+  .view-button {
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+  }
+  
+  .view-button:hover {
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+  }
+  
+  .create-button {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+  }
+  
+  .create-button:hover {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+  }
+  
+  .logout-button {
+    background: linear-gradient(135deg, #ef4444, #f87171);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  }
+  
+  .logout-button:hover {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+  }
+  
+  /* Title styling */
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #3b82f6, #60a5fa, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+    /* animation: shine 3s linear infinite; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes shine {
+    to { background-position: 200% center; }
+  }
+  
+  /* Welcome text styling */
+  .welcome-text {
+    color: #4b5563;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
